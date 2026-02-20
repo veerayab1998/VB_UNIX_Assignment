@@ -19,12 +19,17 @@ $ ls -lh
 $ du -h snp_position.txt fang_et_al_genotypes.txt
 ```
 The result
+
 total 43352
+
 -rw-r--r--@ 1 fan  staff    11M Feb 18 11:26 fang_et_al_genotypes.txt
+
 -rw-r--r--@ 1 fan  staff    81K Feb 18 11:26 snp_position.txt
+
 -rw-r--r--@ 1 fan  staff    11M Feb 18 11:26 transposed_genotypes.txt
 
-* Next, I use the commands below to see how many lines and how large of each files so I can decided on a command to inspect the content in each files
+
+* Next, I use the commands below to see how many lines and how large of each files so I can decided on a command to inspect the content in each file
 
 ```
 $ wc -l snp_position.txt fang_et_al_genotypes.txt
