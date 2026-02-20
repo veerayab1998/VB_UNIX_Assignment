@@ -11,14 +11,14 @@ This repository contains:
 
     ### 00_data_files - this folder includes all .txt files or working files provided from the class assignment
     * the **intermediate** folder contains working file of 00_data_file 
-        * The output files were cut and sort (fang file and snp file), and pattern matching to separate maize and neosinte genotype files
+        * The output files were cut and sort (fang file and snp file), and pattern matching was used to separate maize and neosinte genotype files
 
     ### 01_class_templates - assignment details and .awk command related to the work
-    * this folder contains provided transponse.awk script and original UNIX_assignment.md file
+    * this folder contains the provided transponse.awk script and original UNIX_assignment.md file
 
-    ### 02_transponse_files - this folder includes transponse output files
-    * this folder contains orginal genotype files and used transponse.awk
-    * the **intermediate** folder contains a output transponsed files of maize and teosinte as well as header files of both
+    ### 02_transponse_files - this folder includes transposed output files
+    * this folder contains original genotype files and the used transponse.awk
+    * the **intermediate** folder contains output transposed files of maize and teosinte as well as header files of both
     * the **sort_out** folder contains output files after transponse.awk command
 
     ### 03_maize_files - this folder includes joined maize, maize header, multiple position, and unknown position files
@@ -29,7 +29,7 @@ This repository contains:
     * the **increasing** folder contains a output from chr1-10 in increasing order and ? for ?/?
     * the **decreasing** folder contains a output from chr1-10 in decreasing order and - for ?/?
 
-    ### 05_join_files - this folder includes pre-joined files from teosinte, maize, and sorted snp files
+    ### 05_join_files - this folder includes pre-joined files from teosinte, maize, and sorted SNP files
     * the **output** folder contains output files after joining the SNP and both the teosinte and maize files
     * _both file 1 and file 2 for each maize and teosinte file in **output** folder are the outcome of 
         * join maize snp > file1
