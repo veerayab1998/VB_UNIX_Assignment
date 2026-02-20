@@ -1,5 +1,5 @@
 # Directory in the folder
-*This read me only contains details on file directory* **Please refer to VB_Unix_Keys.md to read the workflow of the assignment
+*This read me only contains details on file directory* **Please refer to VB_Unix_Keys.md to read the workflow of the assignment**
 
 ## Overview
 
