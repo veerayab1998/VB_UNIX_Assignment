@@ -35,7 +35,7 @@ total 43352
 $ wc -l snp_position.txt fang_et_al_genotypes.txt
 $ wc snp_position.txt fang_et_al_genotypes.txt
 ```
-for wc -l
+-  wc -l result
 
     984 snp_position.txt
     
@@ -43,7 +43,7 @@ for wc -l
     
     3767 total
     
- for wc   
+-  wc result   
  
     984 13198   82763 snp_position.txt
     
@@ -66,9 +66,9 @@ fang_et_al_genotypes.txt	986
 
 ```
 $ head -n3 snp_position.txt
-  tail -n3 snp_position.txt
+$  tail -n3 snp_position.txt
 $ head -n2 fang_et_al_genotypes.txt
-  tail -n2 fang_et_al_genotypes.txt
+$ tail -n2 fang_et_al_genotypes.txt
 ```
 
 For snp file, the contents start at row 3
@@ -271,7 +271,7 @@ _lastly, I inspected a file using cat -te to see if it is not continuous and I a
 * `cd` to 04_teosinte_files folder
 * increasing order with replacement of ?/? with ?
 ```
-for chr in {1..10}; do
+$ for chr in {1..10}; do
   { cat teosinte_header.txt
     awk -F $'\t' -v c="$chr" '$2==c' teosinte_joined_noheader2.txt \
       | sort -t $'\t' -k3,3n \
@@ -282,7 +282,7 @@ done
 * decreasing order with replacement of ?/? with -
 
 ```
-for chr in {1..10}; do
+$ for chr in {1..10}; do
   { cat teosinte_header.txt
     awk -F $'\t' -v c="$chr" '$2==c' teosinte_joined_noheader2.txt \
       | sort -t $'\t' -k3,3nr \
@@ -292,21 +292,21 @@ done
 ```
 * for unknown position
 ```
-{ cat teosinte_header.txt
+$ { cat teosinte_header.txt
   awk -F $'\t' '$2=="unknown" || $3=="unknown"' teosinte_joined_noheader2.txt
 } > unknown_positions.txt
 ```
 * for multiple positions
 ```
-{ cat teosinte_header.txt
+${ cat teosinte_header.txt
   awk -F $'\t' '
   ( $2=="multiple" || $3=="multiple" )
 ' teosinte_joined_noheader2.txt } > multiple_positions.txt
 ```
 
 ```
-mkdir increasing decreasing
-mv chr*_increasing.txt increasing
-mv chr*_decreasing.txt decreasing
+$ mkdir increasing decreasing
+$ mv chr*_increasing.txt increasing
+$ mv chr*_decreasing.txt decreasing
 ```
 _lastly, I inspected a file using cat -te to see if it is not continuous and I also see the file in Excel as well_
